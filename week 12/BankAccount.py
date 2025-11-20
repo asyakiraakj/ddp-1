@@ -14,6 +14,7 @@ class CheckingAccount(BankAccount):
 
     #increment: gimana caranya modif deposit(), withdraw(), transfer()
     # OVERRIDING method:
+    # override: membuat method jadi lebih spesifik
     def deposit(self, amount):
         self,transaction_count += 1
         super().deposit(amount) #kalo self.deposit(), berarti dia refer ke diannya sendiri (rekursi), nanti jd ambigu
